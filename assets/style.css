@@ -1,0 +1,150 @@
+/* ----------VARIABLES */
+
+:root {
+    --main-color: #56baed;
+    --secondary-color: #00adb5;
+    --black-ligth-color: rgb(51 51 51 / 49%);
+    --letter-color: #3f579a;
+    /* ---FUENTES */
+    --main-letter: 'Itim', cursive;
+    /* ---TIPOGRAFIA */
+    --h-size: 30px;
+    --icon-size: 20px;
+    --title-weight: 700;
+}
+
+body {
+    font-family: var(--main-letter);
+    margin: 0;
+    padding: 0;
+    background-color: #00adb5;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #393e46;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    top: 225px;
+    padding: 15px;
+}
+
+.option hr {
+    width: 100%;
+}
+
+.player {
+    font-size: 20px;
+    border: 1px solid #3f579a;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+.player:active {
+    background-color: white;
+    color: var(--main-color);
+}
+
+.hiden {
+    display: none;
+}
+
+
+/* -------------------TABLA DE JUEGO- */
+
+.details_board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #393e46;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    top: 155px;
+    padding: 15px;
+    width: 400px;
+}
+
+.shift_play {
+    display: flex;
+}
+
+.shift_play span {
+    padding: 0 30px;
+    font-size: 20px;
+}
+
+.color_selection {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+
+/* -------------------ZONA DE JUEGO- */
+
+.play_zone {
+    margin: 0 auto;
+    position: relative;
+    top: 155px;
+    padding: 15px;
+    width: 420px;
+    height: 370px;
+}
+
+.play_zone span {
+    display: inline-block;
+    background-color: white;
+    width: 95px;
+    margin: 1px;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 40px;
+    text-align: center;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+/* -------------------RESULTADOS DEL JUEGO- */
+
+.result_game {
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    top: 155px;
+    padding: 15px;
+    width: 290px;
+}
+
+.result_game p {
+    text-align: center;
+}
+
+.card_win {
+    text-align: center;
+}
+
+.btn {
+    font-size: 20px;
+    border: 1px solid #3f579a;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    width: 145px;
+    height: 30px;
+}
+
+.btn:active {
+    background-color: white;
+    color: var(--main-color);
+}

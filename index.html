@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>la viejita</title>
+</head>
+
+<body>
+    <main class="mian_section">
+        <section class="game_choose">
+            <div class="option ">
+                <h1>La Viejita</h1>
+                <hr>
+                <p>Escoge quien quieres ser</p>
+                <div class="botones">
+                    <button class="player" id="iconX">Player(X)</button>
+                    <button class="player" id="iconO">Player(O)</button>
+                </div>
+            </div>
+        </section>
+        <section class="game_board hiden">
+            <div class="details_board">
+                <div class="shift_play">
+                    <span class="left-x">Turno de la X</span>
+                    <span class="right-o ">Turno del O</span>
+                </div>
+            </div>
+            <section class="play_zone">
+                <div>
+                    <span class="box1"></span>
+                    <span class="box2"></span>
+                    <span class="box3"></span>
+                </div>
+                <div>
+                    <span class="box4"></span>
+                    <span class="box5"></span>
+                    <span class="box6"></span>
+                </div>
+                <div>
+                    <span class="box7"></span>
+                    <span class="box8"></span>
+                    <span class="box9"></span>
+                </div>
+
+            </section>
+        </section>
+        <section class="result_game hiden">
+            <div class="card_win ">
+                <h1>Felicidades, gano la
+                    <p>X</p>
+                </h1>
+                <button class="btn ">replay </button>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="src/index.js"></script>
+
+</html>
