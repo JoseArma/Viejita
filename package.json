@@ -1,0 +1,22 @@
+{
+  "name": "viejita",
+  "version": "1.0.0",
+  "description": "Un juego de tic tac toe hecho con javascript",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseArma/Viejita.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Jose Vence <vencearma@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoseArma/Viejita/issues"
+  },
+  "homepage": "https://github.com/JoseArma/Viejita#readme"
+}
