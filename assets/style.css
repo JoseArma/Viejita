@@ -52,10 +52,6 @@ body {
     color: var(--main-color);
 }
 
-.hiden {
-    display: none;
-}
-
 
 /* -------------------TABLA DE JUEGO- */
 
@@ -68,7 +64,7 @@ body {
     border-radius: 5px;
     margin: 0 auto;
     position: relative;
-    top: 155px;
+    bottom: 50px;
     padding: 15px;
     width: 400px;
 }
@@ -93,9 +89,9 @@ body {
 .play_zone {
     margin: 0 auto;
     position: relative;
-    top: 155px;
+    bottom: 50px;
     padding: 15px;
-    width: 420px;
+    width: 421px;
     height: 370px;
 }
 
@@ -110,6 +106,11 @@ body {
     text-align: center;
     height: 50px;
     cursor: pointer;
+}
+
+.hiden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 
@@ -148,3 +149,27 @@ body {
     background-color: white;
     color: var(--main-color);
 }
+
+
+/* -------------------EVENTOS JS- */
+
+.option.ocult {
+    opacity: 0;
+    pointer-events: none;
+    /*  transform: translate(-50%, -50%) scale(0.9); */
+}
+
+.player_active {
+    background: var(--main-color);
+    border-radius: 5px;
+    color: white;
+}
+
+.iconos {
+    color: var(--main-color);
+}
+
+
+/* .game_board.show{
+
+} */

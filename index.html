@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
     <title>la viejita</title>
 </head>
@@ -14,7 +14,7 @@
 <body>
     <main class="mian_section">
         <section class="game_choose">
-            <div class="option ">
+            <div class="option" id="choose_player">
                 <h1>La Viejita</h1>
                 <hr>
                 <p>Escoge quien quieres ser</p>
@@ -24,32 +24,32 @@
                 </div>
             </div>
         </section>
-        <section class="game_board hiden">
+        <div class="game_board hiden" id="board">
             <div class="details_board">
                 <div class="shift_play">
-                    <span class="left-x">Turno de la X</span>
-                    <span class="right-o ">Turno del O</span>
+                    <span class="turnGame" id="left-x">Turno de la X</span>
+                    <span class="turnGame" id="right-o ">Turno del O</span>
                 </div>
             </div>
             <section class="play_zone">
-                <div>
-                    <span class="box1"></span>
-                    <span class="box2"></span>
-                    <span class="box3"></span>
-                </div>
-                <div>
-                    <span class="box4"></span>
-                    <span class="box5"></span>
-                    <span class="box6"></span>
-                </div>
-                <div>
-                    <span class="box7"></span>
-                    <span class="box8"></span>
-                    <span class="box9"></span>
-                </div>
+                <section>
+                    <span class="box1">&nbsp;</span>
+                    <span class="box2">&nbsp;</span>
+                    <span class="box3">&nbsp;</span>
+                </section>
+                <section>
+                    <span class="box4">&nbsp;</span>
+                    <span class="box5">&nbsp;</span>
+                    <span class="box6">&nbsp;</span>
+                </section>
+                <section>
+                    <span class="box7">&nbsp;</span>
+                    <span class="box8">&nbsp;</span>
+                    <span class="box9">&nbsp;</span>
+                </section>
 
             </section>
-        </section>
+        </div>
         <section class="result_game hiden">
             <div class="card_win ">
                 <h1>Felicidades, gano la
