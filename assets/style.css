@@ -1,10 +1,10 @@
 /* ----------VARIABLES */
 
 :root {
-    --main-color: #56baed;
-    --secondary-color: #00adb5;
+    --main-color: #334443;
+    --secondary-color: #34656d;
     --black-ligth-color: rgb(51 51 51 / 49%);
-    --letter-color: #3f579a;
+    --letter-color: #c6ffc1;
     /* ---FUENTES */
     --main-letter: 'Itim', cursive;
     /* ---TIPOGRAFIA */
@@ -17,14 +17,14 @@ body {
     font-family: var(--main-letter);
     margin: 0;
     padding: 0;
-    background-color: #00adb5;
+    background-color: var(--main-color);
 }
 
 .option {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: #c6ffc1;
     border: 1px solid #393e46;
     border-radius: 5px;
     width: 300px;
@@ -43,7 +43,7 @@ body {
     border: 1px solid #3f579a;
     border-radius: 5px;
     background-color: var(--main-color);
-    color: white;
+    color: var(--letter-color);
     cursor: pointer;
 }
 
@@ -59,8 +59,8 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: white;
-    border: 1px solid #393e46;
+    background-color: var(--letter-color);
+    border: 1px solid var(--secondary-color);
     border-radius: 5px;
     margin: 0 auto;
     position: relative;
@@ -139,7 +139,7 @@ body {
     border: 1px solid #3f579a;
     border-radius: 5px;
     background-color: var(--main-color);
-    color: white;
+    color: var(--letter-color);
     cursor: pointer;
     width: 145px;
     height: 30px;
@@ -159,10 +159,10 @@ body {
     /*  transform: translate(-50%, -50%) scale(0.9); */
 }
 
-.player_active {
+.active {
     background: var(--main-color);
     border-radius: 5px;
-    color: white;
+    color: var(--letter-color);
 }
 
 .iconos {
