@@ -87,14 +87,14 @@ function YouWin() {
         /* console.log(playerIcon + "" + "" + "gano :D") */
         board.classList.add('hiden')
         tab_result.classList.remove('hiden')
-        WonText.innerHTML = `<h1>Felicidades, gano la ${playerIcon}</h1> <img src="https://static.wikia.nocookie.net/aceattorney/images/c/c9/05_Sprite_Maya_Fey_Asiente.gif/revision/latest/scale-to-width-down/256?cb=20140720113009&path-prefix=es" alt="">`
+        WonText.innerHTML = `<h1>Felicidades, gano la ${playerIcon}</h1> <img src="assets/img/win.gif" alt="">`
         contador++
         console.log(contador)
     } else {
         if (getId(1) != "" && getId(2) != "" && getId(3) != "" && getId(4) != "" && getId(5) != "" && getId(6) != "" && getId(7) != "" && getId(8) != "" && getId(9) != "") {
             board.classList.add('hiden')
             tab_result.classList.remove('hiden')
-            WonText.innerHTML = `<h1>Ups, quedaron empatados jiji</h1><img src="https://static.wikia.nocookie.net/aceattorney/images/1/17/Ini_Embarrassed_1.gif/revision/latest/scale-to-width-down/185?cb=20120822201951" alt="">`
+            WonText.innerHTML = `<h1>Ups, quedaron empatados jiji</h1><img src="assets/img/draw.gif" alt="">`
 
         }
     }
