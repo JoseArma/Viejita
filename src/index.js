@@ -4,12 +4,26 @@ const btnx = document.getElementById('iconX')
 const btno = document.getElementById('iconO')
 const allboxes = document.querySelectorAll('section span')
 const players = document.getElementsByClassName('turnGame')
+const tab_result = document.getElementById('result_player')
+const WonText = document.getElementById('YouWin')
+const again = document.getElementById('boton')
 
+
+let contador = "0"
 
 for (var i = 0; i < allboxes.length; i++) {
     allboxes[i].setAttribute('onclick', "clickBox(this)")
 
 }
+
+
+function replay() {
+    window.location.reload()
+}
+
+again.addEventListener("click", replay)
+
+
 
 function startHideX() {
     characters.classList.add('ocult')
@@ -70,12 +84,21 @@ function checkId(v1, v2, v3, Icon) {
 
 function YouWin() {
     if (checkId(1, 2, 3, playerIcon) || checkId(4, 5, 6, playerIcon) || checkId(7, 8, 9, playerIcon) || checkId(1, 4, 7, playerIcon) || checkId(2, 5, 8, playerIcon) || checkId(3, 6, 9, playerIcon) || checkId(1, 5, 9, playerIcon) || checkId(3, 5, 7, playerIcon)) {
-        console.log(playerIcon + "" + "gano :D")
+        /* console.log(playerIcon + "" + "" + "gano :D") */
+        board.classList.add('hiden')
+        tab_result.classList.remove('hiden')
+        WonText.innerHTML = `<h1>Felicidades, gano la ${playerIcon}</h1> <img src="https://static.wikia.nocookie.net/aceattorney/images/c/c9/05_Sprite_Maya_Fey_Asiente.gif/revision/latest/scale-to-width-down/256?cb=20140720113009&path-prefix=es" alt="">`
+        contador++
+        console.log(contador)
     } else {
-        console.log("Empate")
+        if (getId(1) != "" && getId(2) != "" && getId(3) != "" && getId(4) != "" && getId(5) != "" && getId(6) != "" && getId(7) != "" && getId(8) != "" && getId(9) != "") {
+            board.classList.add('hiden')
+            tab_result.classList.remove('hiden')
+            WonText.innerHTML = `<h1>Ups, quedaron empatados jiji</h1><img src="https://static.wikia.nocookie.net/aceattorney/images/1/17/Ini_Embarrassed_1.gif/revision/latest/scale-to-width-down/185?cb=20120822201951" alt="">`
+
+        }
     }
 }
-
 
 
 //----------------BOT
